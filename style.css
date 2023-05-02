@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: url('./img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body::before {
+    content: '';
+    background-color: rgb(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+}
+
+header{
+    width: 100%;
+    z-index: 10;
+    position: relative;
+    padding: 20px 50px;
+}
+
+
+.logo img {
+    height: 45px;
+    width: 167px;
+}
+
+.login-body{
+    color: white;
+    padding: 60px;
+    z-index: 90;
+    position: relative;
+    width: 450px;
+    height: 550px;
+    margin: 50px 40%;
+    background-color: rgb(0, 0, 0, 0.75);
+    border-radius: 10px;
+    box-sizing: border-box;  
+  
+}
+
+.login-body h2{
+    font-size: 32px;
+}
+
+
+.login-body .l-input{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-body .l-input input {
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 15px;
+}
+
+.login-body .l-input .entrar{
+    background-color: #e50914;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.login-body .l-input input:hover{
+    opacity: 0.8;
+}
+.login-body .l-input .entrar:hover{
+    background-color: #ad050e;
+    cursor: pointer;
+}
+.suport{
+    font-size: 12px;
+    display: flex;
+    padding: 20px 0;
+    gap: 75px;
+    
+}
+
+.remember{
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
+.suport .s-help{
+    padding: 0 0 0 35px;
+}
+
+.suport .s-help a{
+    text-decoration: none;
+    color: #6e6e6e;
+}
+
+.suport .s-help a:hover{
+    text-decoration: underline;
+}
+
+.login-facebook{
+    margin: 0 0 15px;
+    font-size: 12px;
+    display: flex;
+    gap: 5px;
+    align-items: center;  
+}
+
+.login-facebook a{
+    color: #6e6e6e;
+    text-decoration: none;
+}
+
+.login-facebook a:hover{
+    text-decoration: underline;
+}
+
+.login-facebook img{
+    width: 16px;
+    
+}
+
+.sing-up{
+    color: #6e6e6e;
+    margin: 0 0 15px;
+}
+
+.sing-up a{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+.sing-up a:hover{
+    text-decoration: underline;
+}
+
+.terms{
+    font-size: 12px;
+    color: #6e6e6e;
+}
+
+.terms a{
+    color: blue;
+    text-decoration: none;
+}
+.terms a:hover{
+    text-decoration: underline;
+}
